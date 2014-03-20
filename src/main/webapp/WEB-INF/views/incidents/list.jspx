@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_pks_myincidents_domain_Incident" items="${incidents}" z="jY/ASugNFpShaS5+KfttAKFr/WY=">
+        <table:table data="${incidents}" id="l_com_pks_myincidents_domain_Incident" path="/incidents" z="tcpfi2jwDOtdx3y/zF4w8G7OpCg=">
+            <table:column id="c_com_pks_myincidents_domain_Incident_incidentNo" property="incidentNo" z="CRoOFRqlH04f+bFo8mxqXzjoLA0="/>
+			<table:column id="c_com_pks_myincidents_domain_Incident_type" property="type" z="PQlxim6MVb7US00Cfee/7OhVKkk="/>
+            <table:column id="c_com_pks_myincidents_domain_Incident_Priority" property="priority" z="CRoOFRqlH04f+bFo8maqXzjoLA0="/>
+            <table:column id="c_com_pks_myincidents_domain_Incident_Severity" property="severity" z="4vuG3ESBxxAv3wJSzet5ZCGSWh0="/>
+            <table:column id="c_com_pks_myincidents_domain_Incident_Description" property="description" z="s3Q7MGcZZZneDjBadTNJ6j3V1ds="/>
+            <table:column date="true" dateTimePattern="${incident_openeddate_date_format}" id="c_com_pks_myincidents_domain_Incident_openedDate" property="openedDate" z="Mon829Qn1Wv7Ye9sG8/cyntWkBQ="/>
+            <table:column date="true" dateTimePattern="${incident_assigneddate_date_format}" id="c_com_pks_myincidents_domain_Incident_assignedDate" property="assignedDate" z="46NmId1GHPO6/Z3q06EUc9Kde14="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_pks_myincidents_domain_Incident" object="${incident}" path="/incidents" z="52MgWFvx8dHtGl6VBODXzdod/Hk=">
+        <field:display field="type" id="s_com_pks_myincidents_domain_Incident_type" object="${incident}" z="YqbkxjR162cq0pjybsWWvC75ckc="/>
+        <field:display field="priority" id="s_com_pks_myincidents_domain_Incident_Priority" object="${incident}" z="8dX9Vu58gf5H2g/p9OvGDt2HQFk="/>
+        <field:display field="severity" id="s_com_pks_myincidents_domain_Incident_Severity" object="${incident}" z="8uyORaUl+PkZSmb8VVrywWVCSZ4="/>
+        <field:display field="description" id="s_com_pks_myincidents_domain_Incident_Description" object="${incident}" z="I1X0wUAMrYR8aoniO0ex6j/b5Fo="/>
+        <field:display date="true" dateTimePattern="${incident_openeddate_date_format}" field="openedDate" id="s_com_pks_myincidents_domain_Incident_openedDate" object="${incident}" z="gI9TCJVQU5S3ku0qBVgorzrPd6c="/>
+        <field:display date="true" dateTimePattern="${incident_assigneddate_date_format}" field="assignedDate" id="s_com_pks_myincidents_domain_Incident_assignedDate" object="${incident}" z="Bp1Fo8bvBlv9R6+7Q61yllTSKCM="/>
+        <field:display field="owner" id="s_com_pks_myincidents_domain_Incident_owner" object="${incident}" z="OPJIq4Z1rhOvDNNo+8BZct7UWLg="/>
+        <field:display field="status" id="s_com_pks_myincidents_domain_Incident_status" object="${incident}" z="25vEfsHVfObJrRwUYtqwLYnZpBw="/>
+        <field:display field="applicationName" id="s_com_pks_myincidents_domain_Incident_applicationName" object="${incident}" z="kJk+o3pJJ1wHMqvIP02KCjrtYfg="/>
+        <field:display date="true" dateTimePattern="${incident_resolveddate_date_format}" field="resolvedDate" id="s_com_pks_myincidents_domain_Incident_resolvedDate" object="${incident}" z="gWrl7Z9ESWJNDk6dt1wHwprJRMg="/>
+        <field:display field="comments" id="s_com_pks_myincidents_domain_Incident_comments" object="${incident}" z="6Gl99+2S3ahNcA1bQc40RsLFNL4="/>
+        <field:display field="resolutionType" id="s_com_pks_myincidents_domain_Incident_resolutionType" object="${incident}" z="dUber0me+eNb6RB+NVFqz9fPZ8Q="/>
+        <field:display field="resolutionDetails" id="s_com_pks_myincidents_domain_Incident_resolutionDetails" object="${incident}" z="q/D/Y00NggiqUoBVkbDzNkj/J4k="/>
+        <field:display field="issueType" id="s_com_pks_myincidents_domain_Incident_issueType" object="${incident}" z="nxRn1rJMrVOkydCK4b3Q/kweEfg="/>
+        <field:display field="incidentNo" id="s_com_pks_myincidents_domain_Incident_incidentNo" object="${incident}" z="pE7hTt5qibMaJtPs58KiSADD9fE="/>
+    </page:show>
+</div>

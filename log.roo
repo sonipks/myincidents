@@ -1,0 +1,69 @@
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2014-03-20 03:21:26
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-20 03:29:20
+project --topLevelPackage com.pks.myincidents --java 6 --projectName MyIncidents
+jpa setup --provider HIBERNATE --database HYPERSONIC_PERSISTENT
+entity jpa --class ~.domain.Incident --table ASO_INCIDENT --testAutomatically 
+field number --fieldName incidentNo --type java.lang.Integer
+enum type --class ~.domain.IncidentType
+hint
+enum constant --name Incident
+enum constant --name Problem
+enum constant --name Enhancement
+enum constant --name ServiceRequest
+enum constant --name AdhocRequest
+enum constant --name BatchSupport
+enum constant --name Monitoring
+enum constant --name Reporting
+focus --class ~.domain.Incident
+field enum --fieldName type --type ~.domain.IncidentType
+field number --fieldName Priority --type java.lang.Integer
+field number --fieldName Severity --type java.lang.Integer
+field string --fieldName Description
+field date --fieldName openedDate --type java.util.Date
+field date --fieldName assignedDate --type java.util.Date
+field string --fieldName owner
+enum type --class ~.domain.StatusType
+// [failed] enum constant --name Open
+enum type --class ~.domain.StatusType --permitReservedWords 
+// [failed] enum constant --name Open
+// [failed] enum constant --name Open
+enum constant --name Opened
+enum constant --name Assigned
+enum constant --name WIP
+// [failed] enum constant --name Hold
+enum constant --name Holded
+enum constant --name Resolved
+enum constant --name Closed
+enum constant --name ReAssigned
+focus --class ~.domain.Incident
+field enum --fieldName status --type ~.domain.StatusType
+field string --fieldName applicationName
+field date --fieldName resolvedDate --type java.util.Date
+field string --fieldName comments
+field string --fieldName resolutionType
+field string --fieldName resolutionDetails
+enum type --class ~.domain.IssueType
+enum constant --name NewIssue
+enum constant --name KnownIssue
+enum constant --name NA
+focus --class ~.domain.Incident
+field enum --fieldName issueType --type ~.domain.IssueType
+hint
+perform tests
+perform tests
+perform tests
+perform tests
+web mvc setup
+web mvc all --package ~.web
+exit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-03-20 04:24:41
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-20 04:28:49
+focus --class ~.domain.Incident
+// [failed] field number --fieldName incidentNo --type java.lang.Integer --unique 
+field number --fieldName incidentNo --type java.lang.Integer --unique 
+exit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-03-20 04:33:54
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-20 09:03:52
+backup
+exit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-03-20 09:05:54

@@ -1,0 +1,9 @@
+<aspectj>
+<aspects>
+<aspect name="com.pks.myincidents.domain.IncidentIntegrationTest_Roo_Configurable"/>
+<aspect name="com.pks.myincidents.domain.IncidentDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.pks.myincidents.domain.IncidentIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.pks.myincidents.domain.IncidentDataOnDemand_Roo_Configurable"/>
+</aspects>
+</aspectj>
+
